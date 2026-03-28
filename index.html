@@ -3,177 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Лучшие экскурсии по  Тюмени</title>
-    <meta name="title" content="Лучшие экскурсии по  Тюмени">
-    <meta name="description" content="Лучшие экскурсии по  Тюмени на 2026 год">
-    <meta name="author" content="Лев Костин">
-    <meta name="keywords" content="Лучшие экскурсии по  Тюмени Лучшие экскурсии по  Тюмени на 2026 год">
-    
-    <!-- Webmaster Verification -->
+
+    <title>{{ARTICLE_TITLE}}</title>
+    <meta name="title" content="{{ARTICLE_TITLE}}">
+    <meta name="description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="author" content="{{AUTHOR_NAME}}">
+    <meta name="keywords" content="{{ARTICLE_KEYWORDS}}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="google-site-verification" content="k1naFcMKtZ0AU2hjBnyOV0ByIwQiO-JKxBl57AOcdxU">
-    <meta name="yandex-verification" content="97bfa346a2b16149">
-    
-    <!-- Open Graph / Facebook -->
+    <link rel="stylesheet" href="/styles.css"/>
+    <meta name="yandex-verification" content="{{YANDEX_VERIFICATION_CODE}}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="{{ARTICLE_URL}}">
+
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ekskursii-po-tyumeni.vercel.app">
-    <meta property="og:title" content="Лучшие экскурсии по  Тюмени">
-    <meta property="og:description" content="Лучшие экскурсии по  Тюмени на 2026 год">
-    <meta property="og:image" content="https://ekskursii-po-tyumeni.vercel.app/icon.png">
-    <meta property="og:site_name" content="Лучшие экскурсии по  Тюмени">
+    <meta property="og:url" content="{{ARTICLE_URL}}">
+    <meta property="og:title" content="{{ARTICLE_TITLE}}">
+    <meta property="og:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
     <meta property="og:locale" content="ru_RU">
-    <meta property="article:published_time" content="2026-01-10T21:15:14+00:00">
-    <meta property="article:author" content="Лев Костин">
+    <meta property="article:published_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:modified_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:author" content="{{AUTHOR_NAME}}">
     <meta property="article:section" content="Статьи">
-    
-    <!-- Twitter -->
+    <meta property="article:tag" content="{{ARTICLE_KEYWORDS}}">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://ekskursii-po-tyumeni.vercel.app">
-    <meta name="twitter:title" content="Лучшие экскурсии по  Тюмени">
-    <meta name="twitter:description" content="Лучшие экскурсии по  Тюмени на 2026 год">
-    <meta name="twitter:image" content="https://ekskursii-po-tyumeni.vercel.app/icon.png">
-    <meta name="twitter:creator" content="Лев Костин">
-    
-    <!-- Favicon -->
+    <meta name="twitter:url" content="{{ARTICLE_URL}}">
+    <meta name="twitter:title" content="{{ARTICLE_TITLE}}">
+    <meta name="twitter:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+    <meta name="twitter:creator" content="{{AUTHOR_NAME}}">
+
     <link rel="icon" type="image/png" href="/icon.png">
     <link rel="apple-touch-icon" href="/icon.png">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Schema.org JSON-LD -->
+
+
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Лучшие экскурсии по  Тюмени",
-        "description": "Лучшие экскурсии по  Тюмени на 2026 год",
-        "image": "https://ekskursii-po-tyumeni.vercel.app/icon.png",
-        "datePublished": "2026-01-10T21:15:14+00:00",
-        "dateModified": "2026-01-10T21:15:14+00:00",
-        "author": {
-            "@type": "Person",
-            "name": "Лев Костин",
-            "description": "Эксперт в области культурного туризма и гид по необычным маршрутам Тюмени, специализирующийся на раскрытии скрытых жемчужин Сибири. Обладает более чем 10-летним опытом работы в туризме, проводя уникальные экскурсии по малоизвестным локациям и историческим местам города. Автор статей о культурном наследии региона, делится знаниями о тайнах и легендах Тюмени, включая заброшенные объекты, такие как старый Тюменский цирк.",
-            "image": "https://ui-avatars.com/api/?name=Лев+Костин&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Лучшие экскурсии по  Тюмени",
-            "url": "https://ekskursii-po-tyumeni.vercel.app",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://ekskursii-po-tyumeni.vercel.app/icon.png"
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "image": ["{{OG_IMAGE_URL}}"],
+                "datePublished": "{{PUBLISH_DATE_ISO}}",
+                "dateModified": "{{PUBLISH_DATE_ISO}}",
+                "author": {
+                    "@type": "Person",
+                    "name": {{AUTHOR_NAME_JSON}},
+                    "description": {{AUTHOR_DESCRIPTION_JSON}},
+                    "image": "{{AUTHOR_AVATAR}}"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{SITE_URL}}/icon.png"
+                    }
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "{{ARTICLE_URL}}"
+                },
+                "articleSection": "Статьи",
+                "wordCount": {{WORD_COUNT}},
+                "timeRequired": "PT{{READING_TIME}}M",
+                "inLanguage": "ru-RU"
+            },
+            {
+                "@type": "Person",
+                "@id": "{{ARTICLE_URL}}#author",
+                "name": {{AUTHOR_NAME_JSON}},
+                "description": {{AUTHOR_DESCRIPTION_JSON}},
+                "image": "{{AUTHOR_AVATAR}}",
+                "jobTitle": "Эксперт"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": {{SITE_NAME_JSON}},
+                        "item": "{{SITE_URL}}"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Статьи",
+                        "item": "{{SITE_URL}}/articles/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": {{ARTICLE_TITLE_JSON}},
+                        "item": "{{ARTICLE_URL}}"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "{{ARTICLE_URL}}#webpage",
+                "url": "{{ARTICLE_URL}}",
+                "name": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}"
+                },
+                "about": {
+                    "@type": "Thing",
+                    "name": {{ARTICLE_TITLE_JSON}}
+                },
+                "inLanguage": "ru-RU"
             }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://ekskursii-po-tyumeni.vercel.app"
-        },
-        "articleSection": "Статьи",
-        "wordCount": 746,
-        "timeRequired": "PT3M"
+        ]
     }
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="article-header">
-            <div class="header-content">
-                <h1 class="article-title" itemprop="headline">Лучшие экскурсии по  Тюмени</h1>
-                <div class="article-meta">
-                    <time datetime="2026-01-10T21:15:14+00:00" itemprop="datePublished">10.01.2026</time>
-                    <meta itemprop="dateModified" content="2026-01-10T21:15:14+00:00">
-                    <span class="reading-time" itemprop="timeRequired" content="PT3M">Время чтения: 3 мин</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- Author Section -->
-        <section class="author-section" itemscope itemtype="https://schema.org/Person" itemprop="author">
-            <div class="author-card">
-                <div class="author-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Лев+Костин&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true" alt="Лев Костин" itemprop="image" onerror="this.src='https://ui-avatars.com/api/?name=Лев+Костин&size=120&background=4f46e5&color=fff&bold=true'">
-                </div>
-                <div class="author-info">
-                    <div class="author-name" itemprop="name">Лев Костин</div>
-                    <p class="author-description" itemprop="description">Эксперт в области культурного туризма и гид по необычным маршрутам Тюмени, специализирующийся на раскрытии скрытых жемчужин Сибири. Обладает более чем 10-летним опытом работы в туризме, проводя уникальные экскурсии по малоизвестным локациям и историческим местам города. Автор статей о культурном наследии региона, делится знаниями о тайнах и легендах Тюмени, включая заброшенные объекты, такие как старый Тюменский цирк.</p>
-                    <div class="author-badges">
-                        <span class="badge expert" itemprop="jobTitle">Эксперт</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Article Content -->
-        <article class="article-content" itemscope itemtype="https://schema.org/Article">
-            <meta itemprop="headline" content="Лучшие экскурсии по  Тюмени">
-            <meta itemprop="description" content="Лучшие экскурсии по  Тюмени на 2026 год">
-            <meta itemprop="datePublished" content="2026-01-10T21:15:14+00:00">
-            <meta itemprop="dateModified" content="2026-01-10T21:15:14+00:00">
-            <meta itemprop="timeRequired" content="PT3M">
-            <meta itemprop="wordCount" content="746">
-            <div class="content-wrapper" itemprop="articleBody">
-                <p><a href="https://experience.tripster.ru/experience/Tyumen/6487-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Tyumen-6487">Узнать больше</a></p><p>Необычные маршруты в Тюмени — это уникальные и малоизвестные локации, которые открывают город с неожиданной стороны. Это идеальный выбор для тех, кто хочет увидеть не типичные достопримечательности, а настоящие скрытые жемчужины Сибири. Экскурсии проводятся опытными гидами, которые знают город изнутри и умеют рассказывать интересно.</p><p>Тайны заброшенного Тюменского цирка<br> Экскурсия по закрытому зданию старого цирка, которое уже много лет не используется. Гид расскажет о его истории, загадочных событиях и легендах, связанных с этим местом. Маршрут включает осмотр зрительного зала, гримерок и других помещений.<br> Интересная история здания<br> Возможность попасть туда, куда обычным путём не попасть<br> Атмосфера загадочности и приключения<br> <b>Отзывы</b>: Участники отмечают необычность места, эмоциональную насыщенность и профессионализм гида.<br> <b>Цена</b>: 950 руб. за одного<br> Секретные подземелья Тюмени<br> Прогулка по потайным ходам и бункерам советских времён, спрятанным под городскими улицами. Вы узнаете, зачем их строили, как они использовались и почему остались незамеченными большинством горожан.<br> Редкие места, недоступные обычному туристу<br> Исторические факты времен СССР<br> Интригующая обстановка под землёй<br> <b>Отзывы</b>: Люди впечатлены масштабом подземных сооружений и рассказами гида.<br> <b>Цена</b>: 950 руб. за одного<br> Ночные мистические прогулки по Тюмени<br> Пеший маршрут по самым пугающим и загадочным уголкам города после заката. Гид расскажет страшные истории, городские легенды и мистические события, происходившие в Тюмени.<br> Невероятная атмосфера ночного города<br> Страшные истории и таинственные места<br> Необычная перспектива знакомства с Тюменью<br> <b>Отзывы</b>: Участники говорят о драйве, напряжённой атмосфере и интересных поворотах программы.<br> <b>Цена</b>: 1000 руб. за одного<br> Украшаем Тюмень своими руками: граффити-прогулка<br> Вы отправитесь на маршрут по уличному искусству Тюмени и сами сможете создать своё граффити. Под руководством художника вы воплотите задумку на специально отведённой стене.<br> Креативный подход к изучению города<br> Возможность оставить свой след в Тюмени<br> Обучение основам граффити<br> <b>Отзывы</b>: Путешественники хвалят активность, обучение и возможность реализовать свои идеи.<br> <b>Цена</b>: 1200 руб. за одного<br> История Тюмени глазами бомжа<br> Экскурсия от человека, который знает город с другой стороны — через призму жизни на улице. Гид рассказывает о малоизвестных сторонах быта, истории и архитектуры Тюмени.<br> Уникальная точка зрения на город<br> Социальная глубина и человеческая история<br> Личный контакт с гидом<br> <b>Отзывы</b>: <b>Отзывы</b> разные, но многие отмечают искренность, глубину и необычность опыта.<br> <b>Цена</b>: 1500 руб. за одного<br> Мистическая Тюмень: проклятые дома и призраки<br> Тематическая экскурсия по домам, где якобы происходили страшные события или до сих пор живут нечистые». Гид делится историями и преданиями, передававшимися из уст в уста.<br> Захватывающий сюжет<br> Тематический подход<br> Внимание к деталям и легендам<br> <b>Отзывы</b>: Многие считают это отличным способом провести вечер, особенно в компании друзей.<br> <b>Цена</b>: 1000 руб. за одного<br> Тюмень будущего: ультрасовременные проекты и роботы<br> Экскурсия по инновационным пространствам, где создаются роботы, разрабатываются стартапы и внедряются новые технологии. Можно увидеть, как формируется будущее Сибири.<br> Близко к технологиям завтрашнего дня<br> Интерактивность и возможность участвовать<br> Программа рассчитана на любознательных путешественников<br> <b>Отзывы</b>: Оценки высокие — людям интересно и познавательно.<br> <b>Цена</b>: 1300 руб. за одного<br> Заброшенные фабрики и заводы Тюмени: индустриальные руины<br> Маршрут по закрытым производственным объектам, где можно увидеть, как выглядела промышленная эпоха. Экскурсия проходит в режиме urbex, с рассказами о прошлом и настоящем этих мест.<br> Доступ к запрещённым территориям<br> Фотографирование в необычных условиях<br> Историко-промышленная тематика<br> <b>Отзывы</b>: Многие ценят доступ к местам, где обычно нельзя побывать, и исторический контекст.<br> <b>Цена</b>: 1100 руб. за одного<br> Тюмень глазами уличного музыканта<br> Прогулка с уличным музыкантом, который расскажет о городе через призму музыки, культуры и личного опыта. Можно даже принять участие в мини-концерте.<br> Необычный формат общения с гидом<br> Эмоциональная и культурная глубина<br> Возможность услышать живое исполнение<br> <b>Отзывы</b>: Люди называют это душевной экскурсией с теплотой и вдохновением.<br> <b>Цена</b>: 1200 руб. за одного<br> Секретные парки и дворики Тюмени: зелёные тайны<br> Прогулка по малоизвестным зелёным зонам и уютным дворам, где сохранилась атмосфера старой Тюмени. Гид расскажет, какие деревья здесь растут, кто их сажал и что они значат.<br> Уютные и красивые места<br> Экологический и исторический акцент<br> Подходит для отдыха и размышлений<br> <b>Отзывы</b>: Участники возвращаются в хорошем настроении, восхищённые красотой и уединённостью мест.<br> <b>Цена</b>: 900 руб. за одного<br> Вопросы для закрытия темы Необычные маршруты в Тюмени:<br> Какие необычные маршруты в Тюмени считаются самыми популярными?<br> Какие экскурсии в Тюмени позволяют попасть в закрытые или заброшенные здания?<br> Какие необычные маршруты в Тюмени подходят для любителей мистики и легенд?<br> Какие экскурсии в Тюмени включают возможность участия в создании уличного искусства?<br> Какие <b>отзывы</b> оставляют туристы о необычных маршрутах в Тюмени?<br> Какие необычные экскурсии в Тюмени подойдут для людей, интересующихся современными технологиями?<br> Какие необычные маршруты в Тюмени включают работу с местными художниками или музыкантами?<br> Какие необычные экскурсии в Тюмени подходят для семей или групп?<br> Какие самые бюджетные необычные экскурсии в Тюмени в 2025 году?<br> Какие необычные маршруты в Тюмени стоит выбрать для фотосессии или урбанистического исследования<br>Реклама. Flight Marketplace Admin FZE. ИНН 9909618947</p>
-            </div>
-        </article>
-
-        <!-- Table Section -->
-        <section class="table-section">
-            <h2 class="section-title">Таблица сравнения</h2>
-            <div class="table-container">
-                <table border="1" cellpadding="5" cellspacing="0">
-    <thead>
-        <tr>
-            <th>Название</th>
-            <th>Описание</th>
-            <th>Отзывы</th>
-            <th>Цена</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Тайны заброшенного Тюменского цирка</td>
-            <td>Экскурсия по закрытому зданию старого цирка с историей и легендами.</td>
-            <td>Необычность, эмоциональная насыщенность, профессионализм гида.</td>
-            <td>950 руб. за одного</td>
-        </tr>
-        <tr>
-            <td>Секретные подземелья Тюмени</td>
-            <td>Прогулка по потайным ходам и бункерам советских времён.</td>
-            <td>Масштаб подземных сооружений, интересные рассказы гида.</td>
-            <td>950 руб. за одного</td>
-        </tr>
-        <tr>
-            <td>Ночные мистические прогулки по Тюмени</td>
-            <td>Пеший маршрут по загадочным уголкам города после заката.</td>
-            <td>Драйв, напряжённая атмосфера, интересные повороты программы.</td>
-            <td>1000 руб. за одного</td>
-        </tr>
-        <tr>
-            <td>Украшаем Тюмень своими руками: граффити-прогулка</td>
-            <td>Маршрут по уличному искусству с созданием собственного граффити.</td>
-            <td>Креативный подход к изучению.</td>
-            <td>Цена не указана</td>
-        </tr>
-    </tbody>
-</table>
-            </div>
-        </section>
-
-        
-
-        <!-- Footer -->
-        <footer class="article-footer">
-            <div class="footer-content">
-                <p>&copy; 2026 Лев Костин. Все права защищены.</p>
+    <div class="s-d649-page-shell">
+        <div class="s-d649-site-topbar" aria-label="Навигация по статье">
+            <div class="s-d649-site-topbar__brand">
+                <span class="s-d649-site-topbar__dot" aria-hidden="true"></span>
                 
             </div>
-        </footer>
+            
+        </div>
+
+        <main class="s-d649-article-layout">
+            <article class="s-d649-article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="headline" content="{{ARTICLE_TITLE}}">
+                <meta itemprop="description" content="{{ARTICLE_DESCRIPTION}}">
+                <meta itemprop="datePublished" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="dateModified" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="timeRequired" content="PT{{READING_TIME}}M">
+                <meta itemprop="wordCount" content="{{WORD_COUNT}}">
+                <meta itemprop="mainEntityOfPage" content="{{ARTICLE_URL}}">
+
+                <header class="s-d649-hero">
+                    <div class="s-d649-eyebrow-row">
+                        
+                        
+                    </div>
+
+                    <h1 itemprop="headline">{{ARTICLE_TITLE}}</h1>
+                    
+
+                    <div class="s-d649-meta-grid" aria-label="Ключевая информация о статье">
+
+                        <div class="s-d649-meta-card">
+                            <div class="s-d649-meta-label">Дата публикации</div>
+                            <div class="s-d649-meta-value"><time datetime="{{PUBLISH_DATE_ISO}}">{{PUBLISH_DATE_FORMATTED}}</time></div>
+                        </div>
+                        <div class="s-d649-meta-card">
+                            <div class="s-d649-meta-label">Время чтения</div>
+                            <div class="s-d649-meta-value">{{READING_TIME}} мин</div>
+                        </div>
+                        <div class="s-d649-meta-card">
+                            <div class="s-d649-meta-label">Объём текста</div>
+                            <div class="s-d649-meta-value">{{WORD_COUNT}} слов</div>
+                        </div>
+                    </div>
+
+                    <section class="s-d649-author-box" itemscope itemtype="https://schema.org/Person" itemprop="author">
+                        <div class="s-d649-author-avatar">
+                            <img
+                                src="{{AUTHOR_AVATAR}}"
+                                alt="{{AUTHOR_NAME}}"
+                                itemprop="image"
+                                onerror="this.src='https://ui-avatars.com/api/?name={{AUTHOR_NAME_ENCODED}}&size=160&background=f1f5f9&color=111827&bold=true'"
+                            >
+                        </div>
+                        <div class="s-d649-author-info">
+                            <div class="s-d649-author-name-row">
+                                <div class="s-d649-author-name" itemprop="name">{{AUTHOR_NAME}}</div>
+                                <div class="s-d649-author-badge" itemprop="jobTitle">Эксперт</div>
+                            </div>
+                            <p class="s-d649-author-description" itemprop="description">{{AUTHOR_DESCRIPTION}}</p>
+                        </div>
+                    </section>
+                </header>
+
+                <div class="s-d649-article-body">
+                    <div class="s-d649-article-content">
+
+                        <div class="s-d649-notion-prose" itemprop="articleBody">
+                            {{ARTICLE_HTML_CONTENT}}
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <section class="s-d649-table-card s-d649-table-section" aria-labelledby="comparison-title">
+                <div class="s-d649-section-head">
+                    <h2 id="s-d649-comparison-title">Таблица сравнения</h2>
+
+                </div>
+
+                <div class="s-d649-table-wrap">
+                    {{TABLE_CONTENT}}
+                </div>
+            </section>
+
+            <footer class="s-d649-footer-card s-d649-article-footer">
+                <div class="s-d649-footer-inner">
+                    <p>&copy; {{CURRENT_YEAR}}</p>
+                   
+                </div>
+            </footer>
+        </main>
     </div>
+
+
 </body>
 </html>
-
-
